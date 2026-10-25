@@ -1,6 +1,6 @@
 # SMG-VTT
 
-A modular, research-oriented implementation of the method described in *Semantic-Aware Visual–Tactile Graph Fusion with Class-Level Textual Prototype Matching* (supplied manuscript). **No training code, training scripts, optimizer, data-split tools, or trained weights are provided.**
+A modular, research-oriented implementation of the method described in *Semantic-Aware Visual–Tactile Graph Fusion with Class-Level Textual Prototype Matching* (supplied manuscript). 
 
 ## Scope
 
@@ -8,7 +8,6 @@ A modular, research-oriented implementation of the method described in *Semantic
 - **TiG**: tactile patch nodes; per-layer rebuilt feature-space KNN; Max-Relative GraphConv; independent multi-head aggregation; FFN; global max pooling.
 - **Text**: the exact manuscript category-name prompt template, offline description JSON, DistilBERT [CLS]-position representation, learnable projection to 256-D and normalized full prototype bank.
 - **SGPM**: candidate-conditioned modality gate, normalized fused features, all-category inference.
-- The user-supplied `gcn_lib/` is retained as **original reference source** and is directly accessible through `smgvtt/legacy_vig_adapter.py` with existing license/provenance to be checked before public redistribution. The default method implementation in `smgvtt/` contains self-contained operators to avoid importing optional `timm` from legacy ViG.
 
 
 ## Explanation
